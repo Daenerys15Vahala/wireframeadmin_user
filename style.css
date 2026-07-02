@@ -49,6 +49,15 @@ body {
   padding: 0px 10px;
 }
 
+.dashboard {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
+ /* mediaquerys */
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
