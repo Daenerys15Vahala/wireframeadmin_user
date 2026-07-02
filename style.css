@@ -50,6 +50,7 @@ body {
 }
 
 .dashboard {
+  grid-area: header;
   display: grid;
   gap: 20px;
   padding: 20px;
