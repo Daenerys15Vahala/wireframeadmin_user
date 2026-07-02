@@ -53,9 +53,34 @@ body {
   display: grid;
   gap: 20px;
   padding: 20px;
+  text-align: center;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
 
+.logo-img {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  margin-left: 100px;
+}
+
+.bottom-cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}
 
  /* mediaquerys */
 @media screen and (max-height: 450px) {
