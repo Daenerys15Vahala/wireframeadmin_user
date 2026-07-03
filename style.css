@@ -68,6 +68,12 @@ body {
   align-items: center;
 }
 
+.topbar input {
+  width: 250px;
+  height: 250px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
 
 .cards {
   display: grid;
@@ -79,7 +85,16 @@ body {
 .cards div {
   background: white;
   border-radius: 10px;
-  padding: 20px
+  padding: 20px;
+  min-height: 90px;
+  border: 1px solid #ccc;
+}
+
+.charts {
+  background: white;
+  border-radius: 10px;
+  min-height: 350px;
+  padding: 20px;
 }
 
 .logo-img {
@@ -90,15 +105,30 @@ body {
 }
 
 .bottom-cards {
-  display: grid;
+  display: flex;
   justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  text-align: center;
+  align-items: center;
 }
 
+.bottom-cards div {
+  width: 45%;
+  background: white;
+  padding: 28px;
+  border-radius: 10px;
+}
+
+.logout-button {
+  
+
+}
+ 
 .footer {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
  /* mediaquerys */
