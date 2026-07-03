@@ -26,11 +26,15 @@ body {
  justify-content: space-between;
  align-items: flex-start;
  width: 90%;
- margin: auto;
+ margin: 30px auto;
  background: white;
  border-radius: 40px;
  padding: 40px;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dashboard {
@@ -39,12 +43,41 @@ body {
   padding: 30px;
 }
 
-.account {
-  width: 20%;
+.dashboard a {
+  display: block;
+  margin: 25px 0;
+  text-decoration: none;
+  color: #6f4e37;
+  font-weight: bold;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+
+.stats {
+  width: 90%;
+  margin: 30px auto;
+  background: white;
+  border-radius: 40px;
+  padding: 30px;
+}
+
+.stats-top {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.stats-bottom {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 50px;
 }
 
 img {
@@ -52,8 +85,4 @@ img {
   height: 180px;
   border-radius: 5px;
   object-fit: cover;
-}
-
-.container {
-  padding: 2px 16px;
 }
