@@ -12,6 +12,12 @@ body {
   padding-bottom: 10px;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  min-height: 100vh;
+}
+
 .sidebar {
   height: 100%;
   width: 160px;
@@ -50,18 +56,30 @@ body {
 }
 
 .dashboard {
-  grid-area: header;
   display: grid;
-  gap: 20px;
-  padding: 20px;
-  text-align: center;
+  grid-template-rows: 60px auto 1fr auto auto;
+  gap: 25px;
+  padding: 30px;
 }
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   text-align: center;
+}
+
+.cards div {
+  background: white;
+  border-radius: 10px;
+  padding: 20px
 }
 
 .logo-img {
