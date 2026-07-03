@@ -27,7 +27,8 @@ body {
  align-items: flex-start;
  width: 90%;
  margin: 30px auto;
- background: white;
+ background: #8c6d5b;
+ color: white;
  border-radius: 40px;
  padding: 40px;
  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -62,22 +63,25 @@ body {
 .stats {
   width: 90%;
   margin: 30px auto;
-  background: white;
+  background: #8c6d5b;
+  color: white;
   border-radius: 40px;
   padding: 30px;
 }
 
-.stats-top {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
+.stats h2 {
+  margin-bottom: 20px;
+}
+.stats p {
+  margin: 10px 0;
 }
 
+.stats-top,
 .stats-bottom {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  margin-top: 50px;
+  gap: 20px;
 }
 
 img {
