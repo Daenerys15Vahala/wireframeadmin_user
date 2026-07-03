@@ -8,8 +8,7 @@ body {
   background-color: #dbc8bf;
   color: #333;
   line-height: 1.6;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  margin: 0;
 }
 
 .container {
@@ -19,15 +18,12 @@ body {
 }
 
 .sidebar {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
   background-color: #cc9966;
-  overflow-x: hidden;
-  padding-top: 16px;
+  padding-top: 20px;
 }
 
 .sidebar a  {
@@ -40,7 +36,6 @@ body {
 
 .sidebar p {
   padding: 6px 8px 6px 16px;
-  text-decoration: none;
   font-size: 20px;
   color: white;
   display: block;
@@ -50,27 +45,31 @@ body {
   color: #604020;
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-}
-
 .dashboard {
   display: grid;
   grid-template-rows: 60px auto 1fr auto auto;
   gap: 25px;
   padding: 30px;
+  margin-left: 180px;
 }
 
 .topbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 15px;
+}
+
+.topbar-logo {
+  width: 45px;
+  height: 45px;
+  margin-right: auto;
+  border-radius: 5px;
 }
 
 .topbar input {
   width: 250px;
-  height: 250px;
+  height: 40px;
   padding-left: 10px;
   border-radius: 10px;
 }
@@ -99,15 +98,15 @@ body {
 
 .logo-img {
   position: fixed;
-  top: 10px;
-  left: 10px;
-  margin-left: 100px;
+  top: 20px;
+  left: 140px;
+  width: 35px;
+  height: auto;
 }
 
 .bottom-cards {
   display: flex;
   justify-content: space-between;
-  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: center;
 }
@@ -120,7 +119,10 @@ body {
 }
 
 .logout-button {
-  
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 
 }
  
